@@ -6,7 +6,7 @@ A partir dos dados disponibilizados por [kelvins](https://github.com/kelvins) em
 
 ## Como utilizar
 ```
-const { guess, guessOne } = require('Coords2Cidades');
+const { guess, guessOne } = require('CoordsParaCidades');
 
 const near = guess(-7.27, -35.89);
 // [
