@@ -1,0 +1,191 @@
+[
+  {
+    "cod": 11,
+    "uf": "RO",
+    "n": "Rondônia",
+    "lat": -10.83,
+    "lng": -63.34
+  },
+  {
+    "cod": 12,
+    "uf": "AC",
+    "n": "Acre",
+    "lat": -8.77,
+    "lng": -70.55
+  },
+  {
+    "cod": 13,
+    "uf": "AM",
+    "n": "Amazonas",
+    "lat": -3.47,
+    "lng": -65.1
+  },
+  {
+    "cod": 14,
+    "uf": "RR",
+    "n": "Roraima",
+    "lat": 1.99,
+    "lng": -61.33
+  },
+  {
+    "cod": 15,
+    "uf": "PA",
+    "n": "Pará",
+    "lat": -3.79,
+    "lng": -52.48
+  },
+  {
+    "cod": 16,
+    "uf": "AP",
+    "n": "Amapá",
+    "lat": 1.41,
+    "lng": -51.77
+  },
+  {
+    "cod": 17,
+    "uf": "TO",
+    "n": "Tocantins",
+    "lat": -9.46,
+    "lng": -48.26
+  },
+  {
+    "cod": 21,
+    "uf": "MA",
+    "n": "Maranhão",
+    "lat": -5.42,
+    "lng": -45.44
+  },
+  {
+    "cod": 22,
+    "uf": "PI",
+    "n": "Piauí",
+    "lat": -6.6,
+    "lng": -42.28
+  },
+  {
+    "cod": 23,
+    "uf": "CE",
+    "n": "Ceará",
+    "lat": -5.2,
+    "lng": -39.53
+  },
+  {
+    "cod": 24,
+    "uf": "RN",
+    "n": "Rio Grande do Norte",
+    "lat": -5.81,
+    "lng": -36.59
+  },
+  {
+    "cod": 25,
+    "uf": "PB",
+    "n": "Paraíba",
+    "lat": -7.28,
+    "lng": -36.72
+  },
+  {
+    "cod": 26,
+    "uf": "PE",
+    "n": "Pernambuco",
+    "lat": -8.38,
+    "lng": -37.86
+  },
+  {
+    "cod": 27,
+    "uf": "AL",
+    "n": "Alagoas",
+    "lat": -9.62,
+    "lng": -36.82
+  },
+  {
+    "cod": 28,
+    "uf": "SE",
+    "n": "Sergipe",
+    "lat": -10.57,
+    "lng": -37.45
+  },
+  {
+    "cod": 29,
+    "uf": "BA",
+    "n": "Bahia",
+    "lat": -13.29,
+    "lng": -41.71
+  },
+  {
+    "cod": 31,
+    "uf": "MG",
+    "n": "Minas Gerais",
+    "lat": -18.1,
+    "lng": -44.38
+  },
+  {
+    "cod": 32,
+    "uf": "ES",
+    "n": "Espírito Santo",
+    "lat": -19.19,
+    "lng": -40.34
+  },
+  {
+    "cod": 33,
+    "uf": "RJ",
+    "n": "Rio de Janeiro",
+    "lat": -22.25,
+    "lng": -42.66
+  },
+  {
+    "cod": 35,
+    "uf": "SP",
+    "n": "São Paulo",
+    "lat": -22.19,
+    "lng": -48.79
+  },
+  {
+    "cod": 41,
+    "uf": "PR",
+    "n": "Paraná",
+    "lat": -24.89,
+    "lng": -51.55
+  },
+  {
+    "cod": 42,
+    "uf": "SC",
+    "n": "Santa Catarina",
+    "lat": -27.45,
+    "lng": -50.95
+  },
+  {
+    "cod": 43,
+    "uf": "RS",
+    "n": "Rio Grande do Sul",
+    "lat": -30.17,
+    "lng": -53.5
+  },
+  {
+    "cod": 50,
+    "uf": "MS",
+    "n": "Mato Grosso do Sul",
+    "lat": -20.51,
+    "lng": -54.54
+  },
+  {
+    "cod": 51,
+    "uf": "MT",
+    "n": "Mato Grosso",
+    "lat": -12.64,
+    "lng": -55.42
+  },
+  {
+    "cod": 52,
+    "uf": "GO",
+    "n": "Goiás",
+    "lat": -15.98,
+    "lng": -49.86
+  },
+  {
+    "cod": 53,
+    "uf": "DF",
+    "n": "Distrito Federal",
+    "lat": -15.83,
+    "lng": -47.86
+  }
+]
