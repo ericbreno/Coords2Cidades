@@ -23,7 +23,7 @@ const near = guessOne(-7.27, -35.89);
 // }
 ```
 
-- A função *guess* retorna uma lista, na maioria dos casos retornará sempre um elemento, mas caso existam 2 cidades ou mais à mesma distância do ponto, todas são retornadas.
+- A função *guess* retorna uma lista de pares com cidade e estado. Na maioria dos casos retornará sempre um elemento e caso existam 2 cidades ou mais à mesma distância do ponto, todas são retornadas.
 - A função *guessOne* retorna apenas o primeiro resultado, mesmo quando houver mais de uma cidade à mesma distância.
 
 ### Observações
