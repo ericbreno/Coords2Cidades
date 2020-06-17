@@ -1,5 +1,5 @@
 const states = require('./states.json');
-const cities = require('./cities.json');
+const cities = require('./cities-min.json');
 
 const statesMap = states.reduce((map, state) => {
     map[state.cod] = state;
@@ -15,22 +15,23 @@ const statesMap = states.reduce((map, state) => {
  */
 const guess = (latitude, longitude) => {
     const { closer } = cities.reduce((calculated, city) => {
-        const distance = Math.abs(city.lat - latitude) + Math.abs(city.lng - longitude);
+        const [name, lat, lng, cod_uf] = city;
+        const distance = Math.abs(lat - latitude) + Math.abs(lng - longitude);
 
         if (distance < calculated.distance) {
-            return { distance, closer: [city] };
+            return { distance, closer: [{ name, lat, lng, cod_uf }] };
         } else if (distance === calculated.distance) {
-            calculated.closer.push(city);
+            calculated.closer.push({ name, lat, lng, cod_uf });
         }
 
         return calculated;
     }, { distance: Number.MAX_SAFE_INTEGER, closer: [] });
 
     return closer.map((city) => {
-        const { n, lat, lng, cod } = city;
-        const state = statesMap[cod];
+        const { name, lat, lng, cod_uf } = city;
+        const state = statesMap[cod_uf];
         return {
-            city: { name: n, latitude: lat, longitude: lng },
+            city: { name, latitude: lat, longitude: lng },
             state: { name: state.n, latitude: state.lat, longitude: state.lng, uf: state.uf }
         };
     });
