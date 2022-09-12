@@ -1,11 +1,9 @@
 {
   "name": "coords2cidades",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Estimativa de identificação de cidades e estados do Brasil a partir de coordenadas de latitude e longitude",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ericbreno/Coords2Cidades.git"
