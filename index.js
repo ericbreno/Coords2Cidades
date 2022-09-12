@@ -2,7 +2,7 @@ const states = require('./states.json');
 const cities = require('./cities.json');
 
 const statesMap = states.reduce((map, state) => {
-    map[state.cod] = state;
+    map[state[4]] = state;
     return map;
 }, {});
 
@@ -13,9 +13,9 @@ const statesMap = states.reduce((map, state) => {
  * @param {number} longitude 
  * @returns An array containing pairs of cities and states
  */
-const guess = (latitude, longitude) => {
+const find = (latitude, longitude) => {
     const { closer } = cities.reduce((calculated, city) => {
-        const distance = Math.abs(city.lat - latitude) + Math.abs(city.lng - longitude);
+        const distance = Math.abs(city[1] - latitude) + Math.abs(city[2] - longitude);
 
         if (distance < calculated.distance) {
             return { distance, closer: [city] };
@@ -27,11 +27,11 @@ const guess = (latitude, longitude) => {
     }, { distance: Number.MAX_SAFE_INTEGER, closer: [] });
 
     return closer.map((city) => {
-        const { n, lat, lng, cod } = city;
+        const [name, latitude, longitude, cod] = city;
         const state = statesMap[cod];
         return {
-            city: { name: n, latitude: lat, longitude: lng },
-            state: { name: state.n, latitude: state.lat, longitude: state.lng, uf: state.uf }
+            city: { name, latitude, longitude },
+            state: { name: state[0], uf: state[1], latitude: state[2], longitude: state[3] }
         };
     });
 };
@@ -43,10 +43,10 @@ const guess = (latitude, longitude) => {
  * @param {*} longitude 
  * @returns An object containing city and state
  */
-const guessOne = (latitude, longitude) => {
-    const [first] = [...guess(latitude, longitude)];
+const findOne = (latitude, longitude) => {
+    const [first] = [...find(latitude, longitude)];
     return first;
 };
 
-module.exports.guess = guess;
-module.exports.guessOne = guessOne;
+module.exports.find = find;
+module.exports.findOne = findOne;
